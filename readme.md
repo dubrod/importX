@@ -37,8 +37,10 @@ a Sydney based Digital Agency.
 2. WP XML Template Name Mapping to MODX Template ID
     Mapping Config Setting: default:2
     XML value: 
+```
     <wp:meta_key>_wp_page_template</wp:meta_key>
     <wp:meta_value><![CDATA[default]]></wp:meta_value>
+```
 
     will map this Resource to MODX Template 2
 
