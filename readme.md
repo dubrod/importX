@@ -35,7 +35,6 @@ a Sydney based Digital Agency.
 
 Set all Imported resources to a MODX Template ID before the script runs features 2 & 3
 
-
 2. **WP XML Template Name Mapping to MODX Template ID**
 
 Mapping Config Setting: default:2
@@ -47,7 +46,6 @@ XML value:
 ```
 
 This will map the Resource to MODX Template 2
-
 
 3. **Automatic Template Name Matching**
 
