@@ -203,10 +203,6 @@ class WordpressImport
                 //<wp:meta_value><![CDATA[Full Width]]></wp:meta_value>
                 $wp_temp = $this->parseContent((string)$wpm->meta_value);
                 
-                //if the mapping config has a setting, set it
-                if ( isset($this->wp_template_map[$wp_temp]) ) {
-                    $wp_template = $this->wp_template_map[$wp_temp];
-                }
                 //check for automatic match
                 $tpl_name = $this->modx->getObject('modTemplate',array('templatename' => $wp_temp));
 		        if ($tpl_name) {
@@ -214,6 +210,12 @@ class WordpressImport
 		            $this->modx->importx->log('template', 'template name:' . $tpl_name->get('templatename'));
 		            $wp_template = $tpl_name->get('id');
 		        } 
+		
+		//if the mapping config has a setting, set it here overwrite name matching
+                if ( isset($this->wp_template_map[$wp_temp]) ) {
+                    $wp_template = $this->wp_template_map[$wp_temp];
+                }
+		        
             }
         }
         $data = array(
