@@ -42,7 +42,7 @@ a Sydney based Digital Agency.
     <wp:meta_value><![CDATA[default]]></wp:meta_value>
 ```
 
-    will map this Resource to MODX Template 2
+   will map this Resource to MODX Template 2
 
 3. Automatic Template Name Matching
     Like the values above. if you have a MODX template named "default" it will be automatically assigned to the resource.
