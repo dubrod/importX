@@ -33,21 +33,21 @@ a Sydney based Digital Agency.
 
 1. **Default MODX Template ID Config Setting**
 
-Set all Imported resources to a MODX Template ID before the script runs features 2 & 3
+ Set all Imported resources to a MODX Template ID before the script runs features 2 & 3
 
 2. **WP XML Template Name Mapping to MODX Template ID**
 
-Mapping Config Setting: default:2
+ Mapping Config Setting: default:2
 
-XML value: 
+ XML value: 
 ```
     <wp:meta_key>_wp_page_template</wp:meta_key>
     <wp:meta_value><![CDATA[default]]></wp:meta_value>
 ```
 
-This will map the Resource to MODX Template 2
+ This will map the Resource to MODX Template 2
 
 3. **Automatic Template Name Matching**
 
-Like the values above. if you have a MODX template named "default" it will be automatically assigned to the resource.
+ Like the values above. if you have a MODX template named "default" it will be automatically assigned to the resource.
 
