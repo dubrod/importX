@@ -1,0 +1,30 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'importx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd824c9656216f968e215c4c506377511',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '252e08c11021c2aac37c780bff2af569',
+  'native_key' => 'importX',
+  'object' => '{"text":"importX","parent":"components","action":"importx","description":"CSV to Resource Importer","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"importx"}',
+);

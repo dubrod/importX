@@ -1,0 +1,42 @@
+{
+    "name": "importX",
+    "lowCaseName": "importx",
+    "description": "importX plus Wordpress XML Import",
+    "author": "Wayne Roddy, Josh Gulledge, Mark Hamstra",
+    "version": "1.2.0",
+    "package":{
+        "elements": {
+            
+        },
+        "actions": [{
+            "id": 1,
+            "controller": "index",
+            "hasLayout": 1,
+            "langTopics": "importx:default",
+            "assets": ""
+        }],
+		"menus": [{
+            "text": "importX",
+            "description": "CSV to Resource Importer",
+            "action": "importx",
+            "parent": "components",
+            "icon": "",
+            "menuIndex": 0,
+            "params": "",
+            "handler": ""
+        }]
+	},
+	"resolver":{
+        "resolversDir": "resolvers",
+        "after": [],
+        "files": [{
+            "source": "[[+packagePath]]/move_under_assets",
+            "target": "return MODX_ASSETS_PATH . 'components/';"
+        }]
+    },
+    "build": {
+    	"readMe": "docs/index.md",
+		"license": "docs/license.md",
+		"changeLog": "docs/changelog.md"
+    }
+}

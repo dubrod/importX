@@ -1,3 +1,9 @@
+++ ImportX 1.2.0-pl (September 15, 2015)
+ - Default MODX Template ID Config Setting for Wordpress Installer
+ - WP XML Template Name Mapping to MODX Template ID
+ - Automatic Template Name Matching
+ - Attached Git Package Management to repo
+
 ++ ImportX 1.1.1-pl (January 29, 2014)
 +++++++++++++++++++++++++++++++++++++++
 #50 Issue saving TVs on update (thanks @jpdevries)

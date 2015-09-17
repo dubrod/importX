@@ -1,0 +1,86 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'importx',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"importx-1.2.0-pl\\/modCategory\\/d0e6a9d53574ea4827ad6ff7b5aef956\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"importx"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"importx-1.2.0-pl\\/modCategory\\/d0e6a9d53574ea4827ad6ff7b5aef956\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"importx"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '772a305512230566d211c1f5b2c44416',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'd0e6a9d53574ea4827ad6ff7b5aef956',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"importX","rank":0}',
+);
